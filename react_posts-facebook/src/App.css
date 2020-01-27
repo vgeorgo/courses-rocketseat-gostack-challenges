@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background: rgb(240, 240, 240);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  background: #4a90e2;
+  height: 64px;
+  padding: 0 45px 0 45px;
+  color: #fff;
+}
+
+.logo, .profile-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.profile-name {
+  margin-right: 10px;
+}
+
+.posts-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.posts-ignore {
+  flex-grow: 1;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  margin: 30px 0px 0px 0px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.post-profile-user {
+  margin-left: 12px;
+  font-size: 14px;
+  text-align: left;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.post-profile-user span {
+  color: gray;
+  font-size: 11px;
+}
+
+.post-body {
+  width: 100%;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+  padding-bottom: 20px;
+  text-align: left;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.comment {
+  margin-top: 10px;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.comment-content {
+  margin-left: 15px;
+  font-size: 14px;
+  text-align: left;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: rgba(204, 204, 204, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+  color: rgb(68, 68, 68);
+}
+
+.comment-content span {
+  color: #000;
+  font-weight: bold;
+}
